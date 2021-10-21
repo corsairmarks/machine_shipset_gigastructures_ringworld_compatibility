@@ -91,16 +91,47 @@ country_event = {
 		from = {
 			OR = {
 				# regular ringworlds already set themselves to match their owner's graphical culture
-				is_megastructure_type = ringworld_t_3x_segment
+				is_megastructure_type = ringworld_titanic_1
 				# behemoth
-				is_megastructure_type = ringworld_b_3x_segment
+				is_megastructure_type = ringworld_behemoth_1
 				# gargantuan
-				is_megastructure_type = ringworld_g_3x_segment
+				is_megastructure_type = ringworld_gargantuan_1
 			}
 		}
 	}
 	immediate = {
 		log = "upgrade complete [From.GetName]"
-		from = { set_graphical_culture = machine_01 }
+		from = {
+			switch = {
+				trigger = is_megastructure_type
+				ringworld_titanic_1 = {
+					prev.fromfrom = {
+						log = "set culture on all Titanic frames in [This.GetName]"
+						every_system_megastructure = {
+							limit = { is_megastructure_type = ringworld_t_3x_segment }
+							set_graphical_culture = machine_01
+						}
+					}
+				}
+				ringworld_behemoth_1 = {
+					prev.fromfrom = {
+						log = "set culture on all Behemoth frames in [This.GetName]"
+						every_system_megastructure = {
+							limit = { is_megastructure_type = ringworld_b_3x_segment }
+							set_graphical_culture = machine_01
+						}
+					}
+				}
+				ringworld_gargantuan_1 = {
+					prev.fromfrom = {
+						log = "set culture on all Gargantuan frames in [This.GetName]"
+						every_system_megastructure = {
+							limit = { is_megastructure_type = ringworld_g_3x_segment }
+							set_graphical_culture = machine_01
+						}
+					}
+				}
+			}
+		}
 	}
 }

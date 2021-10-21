@@ -28,13 +28,22 @@ Built for Stellaris version 3.1.\* "Lem."  Not compatible with achievements.
 
 [Machine Shipset Add-on: Shattered Ring Appearance](https://steamcommunity.com/sharedfiles/filedetails/?id=2628980994) ensures that the permanently-destroyed sections for Origin: Shattered Ring using the Machine Shipset properly display as that shipset.  This mod adds missing graphical definitions to the Machine Shipset.
 
+### Known Issues
+
+In order to apply the graphics from the Machine Shipset for ringworlds to Gigas, it was necessary to overwrite two of its entity definitions (text files which tell the game how to attach models and textures, and how to shade them).  Overriding a graphics entity causes an error log - expect two entries similar to these:
+
+```
+[23:29:35][pdx_entity.cpp:2583]: Duplicate of giga_ringworld_3x_seams_entity added to entity system
+[23:29:35][pdx_entity.cpp:2583]: Duplicate of giga_ringworld_destroyed_entity added to entity system
+```
+
 ## Changelog
 
 * 1.0.0 Initial version
 
 ## Source Code
 
-Hosted on [GitHub]()
+Hosted on [GitHub](https://github.com/corsairmarks/machine_shipset_gigastructures_ringworld_compatibility)
 
 ### Development Notes
 

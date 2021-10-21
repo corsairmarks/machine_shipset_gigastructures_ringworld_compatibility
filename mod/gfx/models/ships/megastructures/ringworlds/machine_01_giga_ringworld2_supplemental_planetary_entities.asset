@@ -1,4 +1,4 @@
-@ringworld_segment_size = @ringworld_segment_size
+@ringworld_segment_size = 50
 
 #####################################
 ### Machine #########################

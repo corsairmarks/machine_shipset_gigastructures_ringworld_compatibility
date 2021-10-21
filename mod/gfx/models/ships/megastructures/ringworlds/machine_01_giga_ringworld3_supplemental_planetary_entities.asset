@@ -1,8 +1,9 @@
-@ringworld_segment_size = @ringworld_segment_size
+@ringworld_segment_size = 50
 
 #####################################
 ### Machine #########################
 #####################################
+
 entity = {
 	name = "machine_01_behemoth_quarter_entity"
 	cull_radius = 9999

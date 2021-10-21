@@ -13,7 +13,8 @@ entity = {
 	}
 
 	default_state = "idle"
-	state = { name = "idle"
+	state = { name = "idle" state_time = 100 time_offset = { 0 100 }
+		start_event = { trigger_once = yes sound = { soundeffect = "ringworld_hum_idle_01" stop_on_state_change = yes } }
 		start_event = { trigger_once = yes sound = { soundeffect = "ringworld_hum_idle_02" stop_on_state_change = yes } }
 	}
 
@@ -44,7 +45,8 @@ entity = {
 	}
 
 	default_state = "idle"
-	state = { name = "idle"
+	state = { name = "idle" state_time = 100 time_offset = { 0 100 }
+		start_event = { trigger_once = yes sound = { soundeffect = "ringworld_hum_idle_01" stop_on_state_change = yes } }
 		start_event = { trigger_once = yes sound = { soundeffect = "ringworld_hum_idle_02" stop_on_state_change = yes } }
 	}
 	state = { name = "construction"
@@ -227,7 +229,6 @@ entity = {
 #####################################
 ### Damaged #########################
 #####################################
-
 entity = {
 	name = "machine_01_giga_ringworld_habitable_damaged_entity"
 	cull_radius = 500.0
@@ -253,23 +254,55 @@ entity = {
 	name = "machine_01_vanilla_ruined_habitable_entity"
 	cull_radius = 500.0
 	pdxmesh = "machine_01_ringworld_habitable_damaged_01_mesh"
+	game_data = {
+		size = 50
+		shader_type = ship
+		emissive_recolor_crunch = 0
+	}
+
+	default_state = "idle"
+	state = { name = "idle" state_time = 5 }
+	state = { name = "construction" }
 }
 
 entity = {
 	name = "machine_01_vanilla_ruined_seam_entity"
 	cull_radius = 500.0
 	pdxmesh = "machine_01_ringworld_seam_damaged_01_mesh"
+	game_data = {
+		size = 50
+		shader_type = ship
+		emissive_recolor_crunch = 0
+	}
+
+	default_state = "idle"
+	state = { name = "idle" state_time = 5 }
+	state = { name = "construction" }
 }
 
 entity = {
 	name = "machine_01_vanilla_ruined_tech_entity"
 	cull_radius = 500.0
 	pdxmesh = "machine_01_ringworld_tech_damaged_01_mesh"
+	game_data = {
+		size = 50
+		shader_type = ship
+		emissive_recolor_crunch = 0
+	}
+
+	default_state = "idle"
+	state = { name = "idle" state_time = 5 }
+	state = { name = "construction" }
 }
 
 entity = {
 	name = "machine_01_vanilla_ruined_quarter_entity"
 	cull_radius = 9999
+	game_data = {
+		size = 50
+		shader_type = ship
+		emissive_recolor_crunch = 0
+	}
 
 	default_state = "idle"
 	state = { name = "idle" }
@@ -287,13 +320,16 @@ entity = {
 entity = {
 	name = "machine_01_vanilla_ruined_full_entity"
 	cull_radius = 9999
+	game_data = {
+		size = 50
+		shader_type = ship
+		emissive_recolor_crunch = 0
+	}
 
 	locator = { name = "ringworld_north"	position = { 450	0	0		} rotation = { 90	0	0 } }
 	locator = { name = "ringworld_south"	position = { -450	0	0		} rotation = { -90	0	0 } }
 	locator = { name = "ringworld_west"		position = { 0		0	450		} rotation = { 0	0	0 } }
 	locator = { name = "ringworld_east" 	position = { 0		0	-450	} rotation = { 180	0	0 } }
-
-	state = { name = "construction" }
 
 	attach = { ringworld_north 		= "machine_01_vanilla_ruined_quarter_entity" }
 	attach = { ringworld_south 		= "machine_01_vanilla_ruined_quarter_entity" }

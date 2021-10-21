@@ -1,10 +1,11 @@
 namespace = giga_megastructure_supplemental
 
-# triggered by on_megastructure_upgrade_begin
+# triggered by on_megastructure_built
 # gigas defaults to mammalian_01 for cultures it doesn't support, but this compat patch adds support for machine_01
-# root = country (owner)
+# root = country, owner
 # from = megastructure
 # fromfrom = galactic_object (system)
+# fromfromfrom = fleet, constructor
 country_event = {
 	id = giga_megastructure_supplemental.1
 	is_triggered_only = yes
@@ -13,15 +14,93 @@ country_event = {
 		graphical_culture = machine_01
 		from = {
 			OR = {
+				# regular
+				is_megastructure_type = ring_world_1
+				# titanic
+				is_megastructure_type = ringworld_titanic_0
+				# behemoth
+				is_megastructure_type = ringworld_behemoth_0
+				# gargantuan
+				is_megastructure_type = ringworld_gargantuan_0
+			}
+		}
+	}
+	immediate = {
+		log = "construction complete [From.GetName]"
+		from = { set_graphical_culture = machine_01 }
+	}
+}
+
+# triggered by on_megastructure_upgrade_begin
+# gigas defaults to mammalian_01 for cultures it doesn't support, but this compat patch adds support for machine_01
+# root = country (owner)
+# from = megastructure
+# fromfrom = galactic_object (system)
+country_event = {
+	id = giga_megastructure_supplemental.2
+	is_triggered_only = yes
+	hide_window = yes
+	trigger = {
+		graphical_culture = machine_01
+		from = {
+			OR = {
+				# regular
 				is_megastructure_type = ring_world_1
 				is_megastructure_type = ring_world_2
 				is_megastructure_type = ring_world_2_intermediate
 				is_megastructure_type = ring_world_3_intermediate
 				is_megastructure_type = ring_world_ruined
+				# titanic
+				is_megastructure_type = ringworld_titanic_0
+				is_megastructure_type = ringworld_titanic_1
+				is_megastructure_type = ringworld_t_3x_segment
+				is_megastructure_type = ringworld_titanic_2
+				is_megastructure_type = ring_world_titanic_ruined
+				# behemoth
+				is_megastructure_type = ringworld_behemoth_0
+				is_megastructure_type = ringworld_behemoth_1
+				is_megastructure_type = ringworld_b_3x_segment
+				is_megastructure_type = ringworld_behemoth_2
+				is_megastructure_type = ring_world_behemoth_ruined
+				# gargantuan
+				is_megastructure_type = ringworld_gargantuan_0
+				is_megastructure_type = ringworld_gargantuan_1
+				is_megastructure_type = ringworld_g_3x_segment
+				is_megastructure_type = ringworld_gargantuan_2
+				is_megastructure_type = ring_world_gargantuan_ruined
 			}
 		}
 	}
 	immediate = {
+		log = "upgrade begun [From.GetName]"
+		from = { set_graphical_culture = machine_01 }
+	}
+}
+
+# triggered by on_megastructure_upgraded
+# gigas always sets the construction frames to the mammalian_01 culture, but this compat patch adds support for machine_01
+# root = country (owner)
+# from = megastructure
+# fromfrom = galactic_object (system)
+country_event = {
+	id = giga_megastructure_supplemental.3
+	is_triggered_only = yes
+	hide_window = yes
+	trigger = {
+		graphical_culture = machine_01
+		from = {
+			OR = {
+				# regular ringworlds already set themselves to match their owner's graphical culture
+				is_megastructure_type = ringworld_t_3x_segment
+				# behemoth
+				is_megastructure_type = ringworld_b_3x_segment
+				# gargantuan
+				is_megastructure_type = ringworld_g_3x_segment
+			}
+		}
+	}
+	immediate = {
+		log = "upgrade complete [From.GetName]"
 		from = { set_graphical_culture = machine_01 }
 	}
 }

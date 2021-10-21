@@ -26,5 +26,6 @@ on_megastructure_upgrade_begin = {
 on_megastructure_upgraded = {
 	events = {
 		giga_megastructure_supplemental.3
+		giga_megastructure_supplemental.4
 	}
 }

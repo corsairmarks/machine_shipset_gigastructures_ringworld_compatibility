@@ -135,3 +135,162 @@ country_event = {
 		}
 	}
 }
+
+# triggered by on_megastructure_upgraded
+# gigas always sets the finished "planets" to the mammalian_01 culture, but this compat patch adds support for machine_01
+# root = country (owner)
+# from = megastructure
+# fromfrom = galactic_object (system)
+country_event = {
+	id = giga_megastructure_supplemental.4
+	is_triggered_only = yes
+	hide_window = yes
+	trigger = {
+		graphical_culture = machine_01
+		from = {
+			OR = {
+				# regular ringworlds already set themselves to match their owner's graphical culture
+				is_megastructure_type = ringworld_titanic_2
+				is_megastructure_type = ring_world_titanic_restored
+				# behemoth
+				is_megastructure_type = ringworld_behemoth_2
+				is_megastructure_type = ring_world_behemoth_restored
+				# gargantuan
+				is_megastructure_type = ringworld_gargantuan_2
+				is_megastructure_type = ring_world_gargantuan_restored
+			}
+		}
+	}
+	immediate = {
+		log = "upgrade complete [From.GetName]"
+		if = {
+			limit  = {
+				from = {
+					OR = {
+						is_megastructure_type = ringworld_titanic_2
+						is_megastructure_type = ring_world_titanic_restored
+					}
+				}
+			}
+			fromfrom = {
+				log = "set entity on all Titanic planets in [This.GetName]"
+				every_system_planet = {
+					limit = {
+						is_planet_class = pc_ringworld_habitable
+						has_planet_flag = giga_ringworld_tit
+					}
+					set_planet_entity = {
+						entity = "titanic_gaia_habitable_sector_01_entity"
+						graphical_culture = machine_01
+					}
+				}
+				every_system_planet = {
+					limit = {
+						is_planet_class = pc_ringworld_seam
+						has_planet_flag = giga_ringworld_tit
+					}
+					set_planet_entity = {
+						entity = "titanic_seam_sector_entity"
+						graphical_culture = machine_01
+					}
+				}
+				every_system_planet = {
+					limit = {
+						is_planet_class = pc_ringworld_tech
+						has_planet_flag = giga_ringworld_ti
+					}
+					set_planet_entity = {
+						entity = "titanic_tech_sector_entity"
+						graphical_culture = machine_01
+					}
+				}
+			}
+		}
+		else_if = {
+			limit  = {
+				from = {
+					OR = {
+						is_megastructure_type = ringworld_behemoth_2
+						is_megastructure_type = ring_world_behemoth_restored
+					}
+				}
+			}
+			fromfrom = {
+				log = "set entity on all Behemoth planets in [This.GetName]"
+				every_system_planet = {
+					limit = {
+						is_planet_class = pc_ringworld_habitable
+						has_planet_flag = giga_ringworld_beh
+					}
+					set_planet_entity = {
+						entity = "behemoth_gaia_habitable_sector_01_entity"
+						graphical_culture = machine_01
+					}
+				}
+				every_system_planet = {
+					limit = {
+						is_planet_class = pc_ringworld_seam
+						has_planet_flag = giga_ringworld_beh
+					}
+					set_planet_entity = {
+						entity = "behemoth_seam_sector_entity"
+						graphical_culture = machine_01
+					}
+				}
+				every_system_planet = {
+					limit = {
+						is_planet_class = pc_ringworld_tech
+						has_planet_flag = giga_ringworld_beh
+					}
+					set_planet_entity = {
+						entity = "behemoth_tech_sector_entity"
+						graphical_culture = machine_01
+					}
+				}
+			}
+		}
+		else_if = {
+			limit  = {
+				from = {
+					OR = {
+						is_megastructure_type = ringworld_gargantuan_2
+						is_megastructure_type = ring_world_gargantuan_restored
+					}
+				}
+			}
+			fromfrom = {
+				log = "set entity on all Gargantuan planets in [This.GetName]"
+				every_system_planet = {
+					limit = {
+						is_planet_class = pc_ringworld_habitable
+						has_planet_flag = giga_ringworld_gar
+					}
+					set_planet_entity = {
+						entity = "gargantuan_gaia_habitable_sector_01_entity"
+						graphical_culture = machine_01
+					}
+				}
+				every_system_planet = {
+					limit = {
+						is_planet_class = pc_ringworld_seam
+						has_planet_flag = giga_ringworld_gar
+					}
+					set_planet_entity = {
+						entity = "gargantuan_seam_sector_entity"
+						graphical_culture = machine_01
+					}
+				}
+				every_system_planet = {
+					limit = {
+						is_planet_class = pc_ringworld_tech
+						has_planet_flag = giga_ringworld_gar
+					}
+					set_planet_entity = {
+						entity = "gargantuan_tech_sector_entity"
+						graphical_culture = machine_01
+					}
+				}
+			}
+		}
+	}
+}

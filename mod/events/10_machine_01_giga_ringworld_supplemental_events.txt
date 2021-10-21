@@ -197,7 +197,7 @@ country_event = {
 				every_system_planet = {
 					limit = {
 						is_planet_class = pc_ringworld_tech
-						has_planet_flag = giga_ringworld_ti
+						has_planet_flag = giga_ringworld_tit
 					}
 					set_planet_entity = {
 						entity = "titanic_tech_sector_entity"

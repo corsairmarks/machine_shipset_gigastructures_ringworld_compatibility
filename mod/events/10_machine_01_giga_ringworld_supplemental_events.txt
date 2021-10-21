@@ -180,7 +180,7 @@ country_event = {
 						has_planet_flag = giga_ringworld_tit
 					}
 					set_planet_entity = {
-						entity = "titanic_gaia_habitable_sector_01_entity"
+						entity = "titanic_gaia_habitable_sector_entity"
 						graphical_culture = machine_01
 					}
 				}
@@ -223,7 +223,7 @@ country_event = {
 						has_planet_flag = giga_ringworld_beh
 					}
 					set_planet_entity = {
-						entity = "behemoth_gaia_habitable_sector_01_entity"
+						entity = "behemoth_gaia_habitable_sector_entity"
 						graphical_culture = machine_01
 					}
 				}

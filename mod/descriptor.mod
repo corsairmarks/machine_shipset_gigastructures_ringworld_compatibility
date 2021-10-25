@@ -1,4 +1,4 @@
-name="Machine Shipset Add-on: Ringworld Compatibility with Gigastructural Engineering"
+name="Machine Shipset Add-on: Gigastructural Engineering Ringworlds - Standard Ringworld"
 dependencies={
 	"Machine Shipset"
 	"Gigastructural Engineering & More (3.1)"

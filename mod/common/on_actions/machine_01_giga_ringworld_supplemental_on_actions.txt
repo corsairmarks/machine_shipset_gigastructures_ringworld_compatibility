@@ -18,14 +18,3 @@ on_megastructure_upgrade_begin = {
 		giga_megastructure_supplemental.2
 	}
 }
-
-# fired wehen a megastructure has been upgraded
-# this = country (owner)
-# from = megastructure
-# fromfrom = galactic_object (system)
-on_megastructure_upgraded = {
-	events = {
-		giga_megastructure_supplemental.3
-		giga_megastructure_supplemental.4
-	}
-}

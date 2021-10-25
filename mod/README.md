@@ -24,9 +24,15 @@ Built for Stellaris version 3.1.\* "Lem."  Not compatible with achievements.
 
 ### Recommended Companion Mods
 
+[Machine Shipset Add-on: Gigastructural Engineering Ringworlds - Titanic, Behemoth, and Gargantuan]() to enable the Machine Shipset graphics for all three additional sizes of ringworlds added by Gigastructural Engineering.  Warning: the graphics were not edited to reduce curvature, so it produces fairly bendy-looking rings.
+
 [Ringworld Graphical Enhancements](https://steamcommunity.com/sharedfiles/filedetails/?id=2628518102) to apply the owner's graphical culture to the ringworld from Origin: Shattered Ring.  Using my mod Subtle Polish is not recommended due to a high likelihood of conflicts with Gigas.
 
 [Machine Shipset Add-on: Shattered Ring Appearance](https://steamcommunity.com/sharedfiles/filedetails/?id=2628980994) ensures that the permanently-destroyed sections for Origin: Shattered Ring using the Machine Shipset properly display as that shipset.  This mod adds missing graphical definitions to the Machine Shipset.
+
+### When to Install
+
+This mod can be safely added after the game has started, but should not be removed from a game in-progress.  It can theoretically be removed from a game in progress - any standard ringworlds should will likely revert to the fallback appearance for the Machine Shipset (`mammalian_01`), except for the special Origin: Shattered Ring starting section.  Back up your savegame before attempting to remove a mod.
 
 ### Known Issues
 

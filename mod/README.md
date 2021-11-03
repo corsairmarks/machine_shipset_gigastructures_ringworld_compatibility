@@ -1,6 +1,6 @@
 # Overview
 
-This is a compatibility patch between the Machine Shipset and Gigastructural Engineering & More (3.1) to allow regular ringworld sections to use the Machine Shipset graphics (including the Hive and machine variants) for regular-sized ringworlds.  Not yet tested with the larger flavors of ringworld.
+This is a compatibility patch between the Machine Shipset and Gigastructural Engineering & More (3.1) to allow regular ringworld sections to use the Machine Shipset graphics (including the Hive and Machine variants) for regular-sized ringworlds.  For larger flavors of ringworlds, you will need [Machine Shipset Add-on: Gigastructural Engineering Ringworlds - Titanic, Behemoth, and Gargantuan]() which is a separate, optional mod due to the graphical oddities created by the unaltered Machine SHipset ringworld graphics being reused in unintended ways.
 
 Combined with my other mods Ringworld Graphical Enhancements and Machine Shipset Add-on: Shattered Ring Appearance, your Origin: Shattered Ring empires will again have the correct Machine Shipset graphics for their starting ringworlds.
 
@@ -14,7 +14,7 @@ Also replaces two graphical entities from base Gigas - `giga_ringworld_3x_seams_
 
 Same compatibility as Gigastructural Engineering & More (3.1).
 
-Built for Stellaris version 3.1.\* "Lem."  Not compatible with achievements.
+Built for Stellaris version 3.1.\* "Lem."  Not compatible with achievements, but neither are the dependencies.
 
 ### Required Dependency Mods
 

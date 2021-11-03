@@ -1,3 +1,54 @@
+[h1]Overview[/h1]
 
+This is a compatibility patch between the Machine Shipset and Gigastructural Engineering & More (3.1) to allow regular ringworld sections to use the Machine Shipset graphics (including the Hive and Machine variants) for regular-sized ringworlds.  For larger flavors of ringworlds, you will need [url=]Machine Shipset Add-on: Gigastructural Engineering Ringworlds - Titanic, Behemoth, and Gargantuan[/url] which is a separate, optional mod due to the graphical oddities created by the unaltered Machine SHipset ringworld graphics being reused in unintended ways.
+
+Combined with my other mods Ringworld Graphical Enhancements and Machine Shipset Add-on: Shattered Ring Appearance, your Origin: Shattered Ring empires will again have the correct Machine Shipset graphics for their starting ringworlds.
+
+[h1]Changes[/h1]
+
+Adds graphical entities for the Machine Shipset that are compatible with the ringworld changes from Gigastructural Engineering & More (3.1).  Adds an event to assign the [b]machine_01[/b] graphical culture to ringworld megastructures if the constructing empire has that graphical culture.
+
+Also replaces two graphical entities from base Gigas - [b]giga_ringworld_3x_seams_entity[/b] and [b]giga_ringworld_destroyed_entity[/b] - to support alternative mesh usage for custom ringworlds.  Instead of having the central ringworld section's mesh be a part of entity, all 3 sections are added as attachments.  This allows each attached entity to use the mesh defined for its graphical culture.  Basically, without this change the central part of ringworlds under construction wouldn't match correctly.
+
+[h2]Compatibility[/h2]
+
+Same compatibility as Gigastructural Engineering & More (3.1).
+
+Built for Stellaris version 3.1.* "Lem."  Not compatible with achievements, but neither are the dependencies.
+
+[h3]Required Dependency Mods[/h3]
+
+[url=https://steamcommunity.com/sharedfiles/filedetails/?id=2077186491]Machine Shipset[/url] for the original graphics and other ship-related code.
+
+[url=https://steamcommunity.com/sharedfiles/filedetails/?id=1121692237]Gigastructural Engineering & More (3.1)[/url] is the mod we're making compatible.
+
+[h3]Recommended Companion Mods[/h3]
+
+[url=]Machine Shipset Add-on: Gigastructural Engineering Ringworlds - Titanic, Behemoth, and Gargantuan[/url] to enable the Machine Shipset graphics for all three additional sizes of ringworlds added by Gigastructural Engineering.  Warning: the graphics were not edited to reduce curvature, so it produces fairly bendy-looking rings.
+
+[url=https://steamcommunity.com/sharedfiles/filedetails/?id=2628518102]Ringworld Graphical Enhancements[/url] to apply the owner's graphical culture to the ringworld from Origin: Shattered Ring.  Using my mod Subtle Polish is not recommended due to a high likelihood of conflicts with Gigas.
+
+[url=https://steamcommunity.com/sharedfiles/filedetails/?id=2628980994]Machine Shipset Add-on: Shattered Ring Appearance[/url] ensures that the permanently-destroyed sections for Origin: Shattered Ring using the Machine Shipset properly display as that shipset.  This mod adds missing graphical definitions to the Machine Shipset.
+
+[h3]When to Install[/h3]
+
+This mod can be safely added after the game has started, but should not be removed from a game in-progress.  It can theoretically be removed from a game in progress - any standard ringworlds should will likely revert to the fallback appearance for the Machine Shipset ([b]mammalian_01[/b]), except for the special Origin: Shattered Ring starting section.  Back up your savegame before attempting to remove a mod.
+
+[h3]Known Issues[/h3]
+
+In order to apply the graphics from the Machine Shipset for ringworlds to Gigas, it was necessary to overwrite two of its entity definitions (text files which tell the game how to attach models and textures, and how to shade them).  Overriding a graphics entity causes an error log - expect two entries similar to these:
+
+[code]
+[23:29:35][pdx_entity.cpp:2583]: Duplicate of giga_ringworld_3x_seams_entity added to entity system
+[23:29:35][pdx_entity.cpp:2583]: Duplicate of giga_ringworld_destroyed_entity added to entity system
+[/code]
+
+[h2]Changelog[/h2]
+
+See [url=]Change Notes[/url]
+
+[h2]Source Code[/h2]
+
+Hosted on [url=https://github.com/corsairmarks/machine_shipset_gigastructures_ringworld_compatibility]GitHub[/url]
 
 [url=https://discord.gg/bHVez2C][img]https://i.imgur.com/4Und3QN.png[/img][/url]

@@ -45,7 +45,7 @@ In order to apply the graphics from the Machine Shipset for ringworlds to Gigas,
 
 [h2]Changelog[/h2]
 
-See [url=]Change Notes[/url]
+See [url=https://steamcommunity.com/sharedfiles/filedetails/changelog/2644466861]Change Notes[/url]
 
 [h2]Source Code[/h2]
 

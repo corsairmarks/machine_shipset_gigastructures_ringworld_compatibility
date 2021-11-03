@@ -32,5 +32,5 @@ entity = {
 
 	attach = { locator1 = "vanilla_ruined_tech_entity" }
 	attach = { locator2 = "vanilla_ruined_seam_entity" }
-	attach = { locator3 = "vanilla_ruined_gaia_habitable_entity" }
+	attach = { locator3 = "vanilla_ruined_habitable_entity" }
 }

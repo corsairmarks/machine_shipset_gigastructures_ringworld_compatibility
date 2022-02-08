@@ -14,7 +14,7 @@ Also replaces two graphical entities from base Gigas - `giga_ringworld_3x_seams_
 
 Same compatibility as Gigastructural Engineering & More (3.2).
 
-Built for Stellaris version 3.2.\* "Herbert."  Not compatible with achievements, but neither are the dependencies.
+Built for Stellaris version 3.3 "Libra."  Not compatible with achievements, but neither are the dependencies.
 
 ### Required Dependency Mods
 
@@ -47,6 +47,7 @@ In order to apply the graphics from the Machine Shipset for ringworlds to Gigas,
 
 * 1.0.0 Initial version
 * 1.1.0 Mark as compatible with Stellaris version 3.2 "Herbert" - no script changes
+* 1.2.0 Mark as compatible with Stellaris version 3.3 "Libra" - no script changes
 
 ## Source Code
 

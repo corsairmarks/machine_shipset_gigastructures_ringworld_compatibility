@@ -26,7 +26,6 @@ Built for Stellaris version 3.3 "Libra."  Not compatible with achievements, but 
 [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2628980994]Machine Shipset Add-on: Shattered Ring Appearance[/url] ensures that the permanently-destroyed sections for Origin: Shattered Ring using the Machine Shipset properly display as that shipset.  This mod adds missing graphical definitions to the Machine Shipset.
 
 [h3]When to Install[/h3]
-
 This mod can be safely added after the game has started, but should not be removed from a game in-progress.  It can theoretically be removed from a game in progress - any standard ringworlds should will likely revert to the fallback appearance for the Machine Shipset ([b]mammalian_01[/b]), except for the special Origin: Shattered Ring starting section.  Back up your savegame before attempting to remove a mod.
 
 [h3]Known Issues[/h3]

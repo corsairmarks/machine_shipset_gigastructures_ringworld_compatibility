@@ -49,7 +49,8 @@ In order to apply the graphics from the Machine Shipset for ringworlds to Gigas,
 * 1.1.0 Mark as compatible with Stellaris version 3.2 "Herbert" - no script changes
 * 1.2.0 Mark as compatible with Stellaris version 3.3 "Libra" - no script changes
 * 1.3.0 Mark as compatible with Stellaris version 3.4 "Cepheus" - no script changes
-* 1.4.0 Mark as compatible with Stellaris version 3.6 "Orion" - no script changes
+* 1.4.0 Mark as compatible with Stellaris version 3.6 "Orion"
+    * Add support for Machine dyson spheres for class O stars (including the destroyed variant)
 
 ## Source Code
 

@@ -39,8 +39,8 @@ This mod can be safely added after the game has started, but should not be remov
 In order to apply the graphics from the Machine Shipset for ringworlds to Gigas, it was necessary to overwrite two of its entity definitions (text files which tell the game how to attach models and textures, and how to shade them).  Overriding a graphics entity causes an error log - expect two entries similar to these:
 
 ```
-[23:29:35][pdx_entity.cpp:2583]: Duplicate of giga_ringworld_3x_seams_entity added to entity system
-[23:29:35][pdx_entity.cpp:2583]: Duplicate of giga_ringworld_destroyed_entity added to entity system
+[23:42:04][graphics/pdx_entity.cpp:2546]: Duplicate of giga_ringworld_3x_seams_entity added to entity system
+[23:42:04][graphics/pdx_entity.cpp:2546]: Duplicate of giga_ringworld_destroyed_entity added to entity system
 ```
 
 ## Changelog

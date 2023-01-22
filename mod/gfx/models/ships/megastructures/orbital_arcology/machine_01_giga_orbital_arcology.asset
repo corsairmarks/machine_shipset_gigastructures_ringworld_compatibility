@@ -93,7 +93,7 @@ entity = {
 
 	attach = { "loc101" = "machine_01_orbital_arcology_tech_entity" }
 
-	scale = 1 # 0.115
+	scale = 0.115
 }
 
 entity = {

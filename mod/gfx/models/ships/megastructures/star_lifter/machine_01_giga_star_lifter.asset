@@ -1,0 +1,25 @@
+@ringworld_segment_size = 50
+@star_lifter_scale = 0.554
+
+entity = {
+	name = "machine_01_ringworld_sphere_seam_entity"
+	pdxmesh = "machine_01_ringworld_seam_01_mesh"
+	scale = @star_lifter_scale
+	cull_radius = 9999
+	game_data = {
+		size = @ringworld_segment_size
+		shader_type = ship
+		emissive_recolor_crunch = 5.0
+	}
+	default_state = "idle"
+	state = { name = "idle" state_time = 100 time_offset = { 0 100 }
+		start_event = { trigger_once = yes sound = { soundeffect = "ringworld_hum_idle_01" stop_on_state_change = yes } }
+		start_event = { trigger_once = yes sound = { soundeffect = "ringworld_hum_idle_02" stop_on_state_change = yes } }
+	}
+	state = { name = "construction"
+		start_event = { trigger_once = yes sound = { soundeffect = "ringworld_construction_ambient" } }
+	}
+	meshsettings = {
+		shader = "PdxMeshPlanetEmissive"
+	}
+}

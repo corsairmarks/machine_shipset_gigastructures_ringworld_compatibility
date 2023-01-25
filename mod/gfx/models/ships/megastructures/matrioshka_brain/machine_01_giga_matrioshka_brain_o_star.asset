@@ -1,0 +1,185 @@
+#################################################################################################################
+# Matrioshka Brain
+#################################################################################################################
+
+# Two rings at a thirty degrees angle
+entity = {
+	name = "machine_01_matrioshka_brain_01_o_star_entity"
+	cull_radius = 1000
+	default_state = "idle"
+	state = { name = "idle" }
+
+	locator = { name = "loc101" position = { 0 0 0 } rotation = { 0 165 0 } }
+	locator = { name = "loc102" position = { 0 0 0 } rotation = { 0 15 0 } }
+
+	attach = { loc101 = "machine_01_matrioshka_brain_ring_entity" }
+	attach = { loc102 = "machine_01_matrioshka_brain_ring_entity" }
+
+	scale = 2.14
+}
+
+entity = {
+	name = "machine_01_matrioshka_brain_02_o_star_entity"
+	cull_radius = 1000
+	default_state = "idle"
+	state = { name = "idle" }
+
+	locator = { name = "loc101" position = { 0 0 0 } rotation = { 0 165 0 } }
+	locator = { name = "loc102" position = { 0 0 0 } rotation = { 0 15 0 } }
+	locator = { name = "loc103" position = { 0 0 0 } rotation = { 0 90 0 } }
+	locator = { name = "loc104" position = { 0 95 0 } rotation = { 0 0 0 } }
+	locator = { name = "loc105" position = { 0 -95 0 } rotation = { 0 0 0 } }
+
+	attach = { loc101 = "machine_01_matrioshka_brain_ring_entity" }
+	attach = { loc102 = "machine_01_matrioshka_brain_ring_entity" }
+	attach = { loc103 = "machine_01_matrioshka_brain_polar_ring_entity" }
+	attach = { loc104 = "machine_01_matrioshka_brain_computer_ring_entity" }
+	attach = { loc105 = "machine_01_matrioshka_brain_computer_ring_entity" }
+
+	scale = 2.14
+}
+
+entity = {
+	name = "machine_01_matrioshka_brain_02_o_star_construction_entity"
+	cull_radius = 1000
+	default_state = "idle"
+	state = { name = "idle" }
+
+	locator = { name = "loc103" position = { 0 0 0 } rotation = { 0 90 0 } }
+	locator = { name = "loc104" position = { 0 95 0 } rotation = { 0 0 0 } }
+	locator = { name = "loc105" position = { 0 -95 0 } rotation = { 0 0 0 } }
+
+	attach = { loc103 = "machine_01_matrioshka_brain_polar_ring_entity" }
+	attach = { loc104 = "machine_01_matrioshka_brain_computer_ring_entity" }
+	attach = { loc105 = "machine_01_matrioshka_brain_computer_ring_entity" }
+
+	scale = 2.14
+}
+
+entity = {
+	name = "machine_01_matrioshka_brain_03_o_star_entity"
+	cull_radius = 1000
+	default_state = "idle"
+	state = { name = "idle" }
+
+	locator = { name = "loc101" position = { 0 0 0 } rotation = { 0 165 0 } }
+	locator = { name = "loc102" position = { 0 0 0 } rotation = { 0 15 0 } }
+	locator = { name = "loc103" position = { 0 0 0 } rotation = { 0 90 0 } }
+	locator = { name = "loc104" position = { 0 95 0 } rotation = { 0 0 0 } }
+	locator = { name = "loc105" position = { 0 -95 0 } rotation = { 0 0 0 } }
+	locator = { name = "loc108" position = { 0 0 0 } rotation = { 0 0 0 } }
+
+	attach = { loc101 = "machine_01_matrioshka_brain_ring_entity" }
+	attach = { loc102 = "machine_01_matrioshka_brain_ring_entity" }
+	attach = { loc103 = "machine_01_matrioshka_brain_polar_ring_entity" }
+	attach = { loc104 = "machine_01_matrioshka_brain_computer_ring_entity" }
+	attach = { loc105 = "machine_01_matrioshka_brain_computer_ring_entity" }
+	attach = { loc108 = "machine_01_matrioshka_brain_datasphere_entity" }
+
+	scale = 2.14
+}
+
+entity = {
+	name = "machine_01_matrioshka_brain_03_o_star_construction_entity"
+	cull_radius = 1000
+	default_state = "idle"
+	state = { name = "idle" }
+
+	locator = { name = "loc108" position = { 0 0 0 } rotation = { 0 0 0 } }
+
+	attach = { loc108 = "machine_01_matrioshka_brain_datasphere_entity" }
+
+	scale = 2.14
+}
+
+entity = {
+	name = "machine_01_matrioshka_brain_04_o_star_entity"
+	cull_radius = 1000
+	default_state = "idle"
+	state = { name = "idle" }
+
+	locator = { name = "loc101" position = { 0 0 0 } rotation = { 0 165 0 } }
+	locator = { name = "loc102" position = { 0 0 0 } rotation = { 0 15 0 } }
+	locator = { name = "loc103" position = { 0 0 0 } rotation = { 0 90 0 } }
+	locator = { name = "loc104" position = { 0 95 0 } rotation = { 0 0 0 } }
+	locator = { name = "loc105" position = { 0 -95 0 } rotation = { 0 0 0 } }
+	locator = { name = "loc106" position = { 0 0 0 } rotation = { 0 30 0 } }
+	locator = { name = "loc107" position = { 0 0 0 } rotation = { 0 150 0 } }
+	locator = { name = "loc108" position = { 0 0 0 } rotation = { 0 0 0 } }
+
+	attach = { loc101 = "machine_01_matrioshka_brain_ring_entity" }
+	attach = { loc102 = "machine_01_matrioshka_brain_ring_entity" }
+	attach = { loc103 = "machine_01_matrioshka_brain_polar_ring_entity" }
+	attach = { loc104 = "machine_01_matrioshka_brain_computer_ring_entity" }
+	attach = { loc105 = "machine_01_matrioshka_brain_computer_ring_entity" }
+	attach = { loc106 = "machine_01_matrioshka_brain_main_ring_entity" }
+	attach = { loc107 = "machine_01_matrioshka_brain_main_ring_entity" }
+	attach = { loc108 = "machine_01_matrioshka_brain_datasphere_entity" }
+
+	scale = 2.14
+}
+
+entity = {
+	name = "machine_01_matrioshka_brain_04_o_star_construction_entity"
+	cull_radius = 1000
+	default_state = "idle"
+	state = { name = "idle" }
+
+	locator = { name = "loc106" position = { 0 0 0 } rotation = { 0 30 0 } }
+	locator = { name = "loc107" position = { 0 0 0 } rotation = { 0 150 0 } }
+
+	attach = { loc106 = "machine_01_matrioshka_brain_main_ring_entity" }
+	attach = { loc107 = "machine_01_matrioshka_brain_main_ring_entity" }
+
+	scale = 2.14
+}
+
+entity = {
+	name = "machine_01_matrioshka_brain_05_o_star_entity"
+	cull_radius = 1000
+	default_state = "idle"
+	state = { name = "idle" }
+
+	locator = { name = "loc101" position = { 0 0 0 } rotation = { 0 165 0 } }
+	locator = { name = "loc102" position = { 0 0 0 } rotation = { 0 15 0 } }
+	locator = { name = "loc103" position = { 0 0 0 } rotation = { 0 90 0 } }
+	locator = { name = "loc104" position = { 0 95 0 } rotation = { 0 0 0 } }
+	locator = { name = "loc105" position = { 0 -95 0 } rotation = { 0 0 0 } }
+	locator = { name = "loc106" position = { 0 0 0 } rotation = { 0 30 0 } }
+	locator = { name = "loc107" position = { 0 0 0 } rotation = { 0 150 0 } }
+	locator = { name = "loc108" position = { 0 0 0 } rotation = { 0 0 0 } }
+	locator = { name = "loc109" position = { 0 0 0 } rotation = { 0 0 0 } }
+	locator = { name = "loc110" position = { 0 0 0 } rotation = { 0 4 0 } }
+	locator = { name = "loc111" position = { 0 0 0 } rotation = { 0 -4 0 } }
+
+	attach = { loc101 = "machine_01_matrioshka_brain_ring_entity" }
+	attach = { loc102 = "machine_01_matrioshka_brain_ring_entity" }
+	attach = { loc103 = "machine_01_matrioshka_brain_polar_ring_entity" }
+	attach = { loc104 = "machine_01_matrioshka_brain_computer_ring_entity" }
+	attach = { loc105 = "machine_01_matrioshka_brain_computer_ring_entity" }
+	attach = { loc106 = "machine_01_matrioshka_brain_main_ring_entity" }
+	attach = { loc107 = "machine_01_matrioshka_brain_main_ring_entity" }
+	attach = { loc108 = "machine_01_matrioshka_brain_datasphere_entity" }
+	attach = { loc109 = "machine_01_matrioshka_brain_bigtechring_entity" }
+	attach = { loc110 = "machine_01_matrioshka_brain_bigdataring_entity" }
+	attach = { loc111 = "machine_01_matrioshka_brain_bigdataring_entity" }
+
+	scale = 2.14
+}
+
+entity = {
+	name = "machine_01_matrioshka_brain_05_o_star_construction_entity"
+	cull_radius = 1000
+	default_state = "idle"
+	state = { name = "idle" }
+
+	locator = { name = "loc109" position = { 0 0 0 } rotation = { 0 0 0 } }
+	locator = { name = "loc110" position = { 0 0 0 } rotation = { 0 4 0 } }
+	locator = { name = "loc111" position = { 0 0 0 } rotation = { 0 -4 0 } }
+
+	attach = { loc109 = "machine_01_matrioshka_brain_bigtechring_entity" }
+	attach = { loc110 = "machine_01_matrioshka_brain_bigdataring_entity" }
+	attach = { loc111 = "machine_01_matrioshka_brain_bigdataring_entity" }
+
+	scale = 2.14
+}

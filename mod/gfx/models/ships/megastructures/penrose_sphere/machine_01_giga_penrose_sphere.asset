@@ -15,7 +15,7 @@ entity = {
 	locator = { name = "locator2" position = { -225 0 -60.289 } rotation = { -30 0 0 } }
 	locator = { name = "locator3" position = { 225  0 -60.289 } rotation = { 30  0 0 } }
 
-	attach = { locator1 = "giga_ringworld_3x_seams_entity" }
+	attach = { locator1 = "machine_01_giga_ringworld_3x_seams_entity" }
 	attach = { locator2 = "machine_01_vanilla_construction_entity" }
 	attach = { locator3 = "machine_01_vanilla_construction_entity" }
 }
@@ -48,7 +48,7 @@ entity = {
 
 	attach = { "shadows1" = "machine_01_ringworld_habitable_entity_01_cloud_shadows_entity" }
 	attach = { "clouds1" = "machine_01_ringworld_habitable_entity_01_clouds_entity" }
-	attach = { locator1 = "penrose_link_entity" }
+	attach = { locator1 = "machine_01_penrose_link_entity" }
 	attach = { locator2 = "machine_01_vanilla_gaia_habitable_entity" }
 	attach = { locator3 = "machine_01_vanilla_gaia_habitable_entity" }
 }
@@ -225,54 +225,14 @@ entity = {
 }
 
 entity = {
-	name = "penrose_sphere_l1_entity"
-	scale = 1.3
-	cull_radius = 500
-
-	locator = { name = "root_01" position = { 0 0 0 } rotation = { 0   0 0 } }
-	locator = { name = "root_02" position = { 0 0 0 } rotation = { 180 0 0 } }
-	locator = { name = "root_03" position = { 0 0 0 } rotation = { 0 180 0 } }
-	locator = { name = "root_04" position = { 0 0 0 } rotation = { 0 0 180 } }
-	attach = { root_02 = "penta_rays_entity" }
-	attach = { root_02 = "hexa_rays_entity" }
-	attach = { root_03 = "penta_rays_entity" }
-	attach = { root_03 = "hexa_rays_entity" }
-	attach = { root_04 = "penta_rays_entity" }
-	attach = { root_04 = "hexa_rays_entity" }
-
-	game_data = { emissive_recolor_crunch = 50.0 }
-}
-
-entity = {
-	name = "penrose_sphere_l2_entity"
-	scale = 1.3
-	cull_radius = 500
-
-	locator = { name = "root_01" position = { 0 0 0 } rotation = { 0   0 0 } }
-	locator = { name = "root_02" position = { 0 0 0 } rotation = { 180 0 0 } }
-	locator = { name = "root_03" position = { 0 0 0 } rotation = { 0 180 0 } }
-	locator = { name = "root_04" position = { 0 0 0 } rotation = { 0 0 180 } }
-	attach = { root_01 = "penta_rays_entity" }
-	attach = { root_01 = "hexa_rays_entity" }
-	attach = { root_02 = "penta_rays_entity" }
-	attach = { root_02 = "hexa_rays_entity" }
-	attach = { root_03 = "penta_rays_entity" }
-	attach = { root_03 = "hexa_rays_entity" }
-	attach = { root_04 = "penta_rays_entity" }
-	attach = { root_04 = "hexa_rays_entity" }
-
-	game_data = { emissive_recolor_crunch = 50.0 }
-}
-
-entity = {
-	name = "penrose_relic_full_entity"
+	name = "machine_01_penrose_relic_full_entity"
 	scale = 0.01
 	game_data = {
 		size = 6.5
 	}
 
 	locator = { name = "root"				position = { 0		0	0		} rotation = { 0	0	0 } }
-	locator = { name = "star"				position = { 0		0	0		} rotation = { 0	0	0 } scale = 15 }
+	locator = { name = "star"				position = { 0		0	0		} rotation = { 0	0	0 }	scale = 15 }
 	locator = { name = "ringworld_west"		position = { 0		0	450		} rotation = { 0	0	0 } }
 	locator = { name = "ringworld_east" 	position = { 0		0	-450	} rotation = { 180	0	0 } }
 	attach = { star 			= "black_hole_entity" }

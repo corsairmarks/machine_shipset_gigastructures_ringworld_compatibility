@@ -33,7 +33,7 @@ This mod can be safely added after the game has started, but should not be remov
 
 ### Known Issues
 
-In order to ensure the Penrose Sphere ringworld segments look like the Machine Shipset when completed, it was necessary to override the final stage of the megastructure `gigablackhole_ring_world_3`. Expect to see one entry in the error.log like this:
+In order to ensure the Penrose Sphere ringworld segments look like the Machine Shipset when completed, it was necessary to override the final stage of the megastructures `gigablackhole_ring_world_3` and `interstellar_habitat_5`. Expect to see two entries in the error.log like this:
 
 ```
 [23:42:04][graphics/pdx_entity.cpp:2546]: Duplicate of giga_ringworld_3x_seams_entity added to entity system

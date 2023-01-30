@@ -8,7 +8,7 @@ Combined with my other mods Ringworld Graphical Enhancements and Machine Shipset
 
 Adds graphical entities for the Machine Shipset that are compatible with the ringworld changes from Gigastructural Engineering & More (3.6).  Adds an event to assign the `machine_01` graphical culture to ringworld megastructures if the constructing empire has that graphical culture.
 
-Also replaces one megastructure from base Gigas - `gigablackhole_ring_world_3` - to support having the Penrose Sphere rignworlds match the `machine_01` graphical culture.
+Also replaces two megastructures from base Gigas - `gigablackhole_ring_world_3` and `interstellar_habitat_5` - to support having the Penrose Sphere and Interstellar Habitat ringworlds match the `machine_01` graphical culture.  Note that existing fully constructed ringworld segments are not affected, only segments that finish upgrading after enabling this mod will have the new appearance.
 
 ## Compatibility
 
@@ -33,10 +33,11 @@ This mod can be safely added after the game has started, but should not be remov
 
 ### Known Issues
 
-In order to ensure the Penrose Sphere ringworld segments look like the Machine Shipset when completed, it was necessary to override the final stage of the megastructures `gigablackhole_ring_world_3` and `interstellar_habitat_5`. Expect to see two entries in the error.log like this:
+In order to ensure the Penrose Sphere and Interstellar Habitat ringworld segments look like the Machine Shipset when completed, it was necessary to override the final stage of the megastructures `gigablackhole_ring_world_3` and `interstellar_habitat_5`. Expect to see two entries in the error.log like this:
 
 ```
-[23:42:04][graphics/pdx_entity.cpp:2546]: Duplicate of giga_ringworld_3x_seams_entity added to entity system
+[23:55:48][game_singleobjectdatabase.h:165]: Object with key: gigablackhole_ring_world_3 already exists, using the one at  file: common/megastructures/~~_machine_shipset_gigastructures_overrides.txt line: 2
+[23:55:48][game_singleobjectdatabase.h:165]: Object with key: interstellar_habitat_5 already exists, using the one at  file: common/megastructures/~~_machine_shipset_gigastructures_overrides.txt line: 67
 ```
 
 ## Changelog

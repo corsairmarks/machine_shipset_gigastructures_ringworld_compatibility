@@ -6,7 +6,7 @@ Combined with my other mods Ringworld Graphical Enhancements and Machine Shipset
 [h1]Changes[/h1]
 Adds graphical entities for the Machine Shipset that are compatible with the ringworld changes from Gigastructural Engineering & More (3.6).  Adds an event to assign the [b]machine_01[/b] graphical culture to ringworld megastructures if the constructing empire has that graphical culture.
 
-Also replaces two graphical entities from base Gigas - [b]giga_ringworld_3x_seams_entity[/b] and [b]giga_ringworld_destroyed_entity[/b] - to support alternative mesh usage for custom ringworlds.  Instead of having the central ringworld section's mesh be a part of entity, all 3 sections are added as attachments.  This allows each attached entity to use the mesh defined for its graphical culture.  Basically, without this change the central part of ringworlds under construction wouldn't match correctly.
+Also replaces two megastructures from base Gigas - [b]gigablackhole_ring_world_3[/b] and [b]interstellar_habitat_5[/b] - to support having the Penrose Sphere and Interstellar Habitat ringworlds match the [b]machine_01[/b] graphical culture.  Note that existing fully constructed ringworld segments are not affected, only segments that finish upgrading after enabling this mod will have the new appearance.
 
 [h2]Compatibility[/h2]
 Same compatibility as Gigastructural Engineering & More (3.6).
@@ -28,10 +28,10 @@ Built for Stellaris version 3.6 "Orion."  Not compatible with achievements, but 
 This mod can be safely added after the game has started, but should not be removed from a game in-progress.  It can theoretically be removed from a game in progress - any standard ringworlds should will likely revert to the fallback appearance for the Machine Shipset ([b]mammalian_01[/b]), except for the special Origin: Shattered Ring starting section.  Back up your savegame before attempting to remove a mod.
 
 [h3]Known Issues[/h3]
-In order to apply the graphics from the Machine Shipset for ringworlds to Gigas, it was necessary to overwrite two of its entity definitions (text files which tell the game how to attach models and textures, and how to shade them).  Overriding a graphics entity causes an error log - expect two entries similar to these:
+In order to ensure the Penrose Sphere and Interstellar Habitat ringworld segments look like the Machine Shipset when completed, it was necessary to override the final stage of the megastructures [b]gigablackhole_ring_world_3[/b] and [b]interstellar_habitat_5[/b]. Expect to see two entries in the error.log like this:
 [code]
-[23:42:04][graphics/pdx_entity.cpp:2546]: Duplicate of giga_ringworld_3x_seams_entity added to entity system
-[23:42:04][graphics/pdx_entity.cpp:2546]: Duplicate of giga_ringworld_destroyed_entity added to entity system
+[23:55:48][game_singleobjectdatabase.h:165]: Object with key: gigablackhole_ring_world_3 already exists, using the one at  file: common/megastructures/~~_machine_shipset_gigastructures_overrides.txt line: 2
+[23:55:48][game_singleobjectdatabase.h:165]: Object with key: interstellar_habitat_5 already exists, using the one at  file: common/megastructures/~~_machine_shipset_gigastructures_overrides.txt line: 67
 [/code]
 [h2]Changelog[/h2]
 See [url=https://steamcommunity.com/sharedfiles/filedetails/changelog/2644466861]Change Notes[/url]

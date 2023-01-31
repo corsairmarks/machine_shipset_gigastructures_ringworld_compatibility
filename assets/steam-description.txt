@@ -1,7 +1,9 @@
 [h1]Overview[/h1]
-This is a compatibility patch between the Machine Shipset and Gigastructural Engineering & More (3.6) to allow regular ringworld sections to use the Machine Shipset graphics (including the Hive and Machine variants) for regular-sized ringworlds.  For larger flavors of ringworlds, you will need [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2644469566]Machine Shipset Add-on: Gigastructural Engineering Ringworlds - Titanic, Behemoth, and Gargantuan[/url] which is a separate, optional mod due to the graphical oddities created by the unaltered Machine Shipset ringworld graphics being reused in unintended ways.
+This is a compatibility patch between the Machine Shipset and Gigastructural Engineering & More (3.6) to allow regular ringworld sections to use the Machine Shipset graphics (including the Hive and Machine variants) for regular-sized ringworlds.  This mod also ensures that the Machine Shipset ringworld segments are used for many gigastructures such as the Matrioshka Brain and Orbital Arcology and that the O-class Dyson Sphere also uses a matching model.
 
-Combined with my other mods Ringworld Graphical Enhancements and Machine Shipset Add-on: Shattered Ring Appearance, your Origin: Shattered Ring empires will again have the correct Machine Shipset graphics for their starting ringworlds.
+For larger flavors of ringworlds, you will need [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2644469566]Machine Shipset Add-on: Gigastructural Engineering Ringworlds - Titanic, Behemoth, and Gargantuan[/url] which is a separate, optional mod due to the graphical oddities created by the unaltered Machine Shipset ringworld graphics being reused in unintended ways.
+
+Combined with my other mods [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2628518102]Ringworld Graphical Enhancements[/url] and [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2628980994]Machine Shipset Add-on: Shattered Ring and Habitat Appearance[/url], your Origin: Shattered Ring empires will again have the correct Machine Shipset graphics for their starting ringworlds.
 
 [h1]Changes[/h1]
 Adds graphical entities for the Machine Shipset that are compatible with the ringworld changes from Gigastructural Engineering & More (3.6).  Adds an event to assign the [b]machine_01[/b] graphical culture to ringworld megastructures if the constructing empire has that graphical culture.
@@ -21,7 +23,7 @@ Built for Stellaris version 3.6 "Orion."  Not compatible with achievements, but 
 [h3]Recommended Companion Mods[/h3]
 [list]
 [*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=2628518102]Ringworld Graphical Enhancements[/url] to apply the owner's graphical culture to the ringworld from Origin: Shattered Ring (my mod Subtle Polish is not recommended due to a high likelihood of conflicts with Gigas)
-[*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=2628980994]Machine Shipset Add-on: Shattered Ring Appearance[/url] ensures that the permanently-destroyed sections for Origin: Shattered Ring using the Machine Shipset properly display as that shipset (adds missing graphical definitions to the Machine Shipset)
+[*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=2628980994]Machine Shipset Add-on: Shattered Ring and Habitat Appearance[/url] ensures that the permanently-destroyed sections for Origin: Shattered Ring using the Machine Shipset properly display as that shipset (adds missing graphical definitions to the Machine Shipset)
 [*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=2644469566]Machine Shipset Add-on: Gigastructural Engineering Ringworlds - Titanic, Behemoth, and Gargantuan[/url] to enable the Machine Shipset graphics for all three additional sizes of ringworlds added by Gigastructural Engineering - warning: the graphics were not edited to reduce curvature, so it produces fairly bendy-looking rings
 [/list]
 [h3]When to Install[/h3]

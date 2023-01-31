@@ -52,7 +52,7 @@ In order to ensure the Penrose Sphere and Interstellar Habitat ringworld segment
     * Add support for Machine dyson spheres for class O stars (including the destroyed variant)
 * 1.5.0 Add support for many additional megastructures from Gigastructural Engineering & More
     * Add compatibility trigger for other mods to check whether this one is active
-    * Remoive unnecessary `giga_fixes.txt overrides`
+    * Remove unnecessary `giga_fixes.txt overrides`
 
 ## Source Code
 

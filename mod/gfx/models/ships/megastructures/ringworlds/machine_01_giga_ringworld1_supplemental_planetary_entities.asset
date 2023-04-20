@@ -118,7 +118,7 @@ entity = {
 	pdxmesh = "machine_01_ringworld_tech_01_mesh"
 	cull_radius = 500.0
 	default_state = "idle"
-	state = { name = "idle" state_time = 5 }
+	state = { name = "idle" }
 	state = { name = "construction" }
 	meshsettings = {
 		shader = "PdxMeshPlanetEmissive"

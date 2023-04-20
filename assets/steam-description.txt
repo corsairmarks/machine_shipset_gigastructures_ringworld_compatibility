@@ -1,24 +1,24 @@
 [h1]Overview[/h1]
-This is a compatibility patch between the Machine Shipset and Gigastructural Engineering & More (3.6) to allow regular ringworld sections to use the Machine Shipset graphics (including the Hive and Machine variants) for regular-sized ringworlds.  This mod also ensures that the Machine Shipset ringworld segments are used for many gigastructures such as the Matrioshka Brain and Orbital Arcology and that the O-class Dyson Sphere also uses a matching model.
+This is a compatibility patch between the Machine Shipset and Gigastructural Engineering & More (3.7) to allow regular ringworld sections to use the Machine Shipset graphics (including the Hive and Machine variants) for regular-sized ringworlds. This mod also ensures that the Machine Shipset ringworld segments are used for many gigastructures such as the Matrioshka Brain and Orbital Arcology and that the O-class Dyson Sphere also uses a matching model.
 
 For larger flavors of ringworlds, you will need [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2644469566]Machine Shipset Add-on: Gigastructural Engineering Ringworlds - Titanic, Behemoth, and Gargantuan[/url] which is a separate, optional mod due to the graphical oddities created by the unaltered Machine Shipset ringworld graphics being reused in unintended ways.
 
 Combined with my other mods [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2628518102]Ringworld Graphical Enhancements[/url] and [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2628980994]Machine Shipset Add-on: Shattered Ring and Habitat Appearance[/url], your Origin: Shattered Ring empires will again have the correct Machine Shipset graphics for their starting ringworlds.
 
 [h1]Changes[/h1]
-Adds graphical entities for the Machine Shipset that are compatible with the ringworld changes from Gigastructural Engineering & More (3.6).  Adds an event to assign the [b]machine_01[/b] graphical culture to ringworld megastructures if the constructing empire has that graphical culture.
+Adds graphical entities for the Machine Shipset that are compatible with the ringworld changes from Gigastructural Engineering & More (3.7). Adds an event to assign the [b]machine_01[/b] graphical culture to ringworld megastructures if the constructing empire has that graphical culture.
 
-Also replaces two megastructures from base Gigas - [b]gigablackhole_ring_world_3[/b] and [b]interstellar_habitat_5[/b] - to support having the Penrose Sphere and Interstellar Habitat ringworlds match the [b]machine_01[/b] graphical culture.  Note that existing fully constructed ringworld segments are not affected, only segments that finish upgrading after enabling this mod will have the new appearance.
+Also replaces two megastructures from base Gigas - [b]gigablackhole_ring_world_3[/b] and [b]interstellar_habitat_5[/b] - to support having the Penrose Sphere and Interstellar Habitat ringworlds match the [b]machine_01[/b] graphical culture. Note that existing fully constructed ringworld segments are not affected, only segments that finish upgrading after enabling this mod will have the new appearance.
 
 [h2]Compatibility[/h2]
-Same compatibility as Gigastructural Engineering & More (3.6).
+Same compatibility as Gigastructural Engineering & More (3.7).
 
-Built for Stellaris version 3.6 "Orion."  Not compatible with achievements, but neither are the dependencies.
+Built for Stellaris version 3.7 "Canis Minor." Not compatible with achievements, but neither are the dependencies.
 
 [h3]Required Dependency Mods[/h3]
 [list]
 [*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=2077186491]Machine Shipset[/url] for the original graphics and other ship-related code
-[*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=1121692237]Gigastructural Engineering & More (3.6)[/url] is the mod we're making compatible
+[*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=1121692237]Gigastructural Engineering & More (3.7)[/url] is the mod we're making compatible
 [/list]
 [h3]Recommended Companion Mods[/h3]
 [list]
@@ -27,13 +27,13 @@ Built for Stellaris version 3.6 "Orion."  Not compatible with achievements, but 
 [*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=2644469566]Machine Shipset Add-on: Gigastructural Engineering Ringworlds - Titanic, Behemoth, and Gargantuan[/url] to enable the Machine Shipset graphics for all three additional sizes of ringworlds added by Gigastructural Engineering - warning: the graphics were not edited to reduce curvature, so it produces fairly bendy-looking rings
 [/list]
 [h3]When to Install[/h3]
-This mod can be safely added after the game has started, but should not be removed from a game in-progress.  It can theoretically be removed from a game in progress - any standard ringworlds should will likely revert to the fallback appearance for the Machine Shipset ([b]mammalian_01[/b]), except for the special Origin: Shattered Ring starting section.  Back up your savegame before attempting to remove a mod.
+This mod can be safely added after the game has started, but should not be removed from a game in-progress. It can theoretically be removed from a game in progress - any standard ringworlds should will likely revert to the fallback appearance for the Machine Shipset ([b]mammalian_01[/b]), except for the special Origin: Shattered Ring starting section. Back up your savegame before attempting to remove a mod.
 
 [h3]Known Issues[/h3]
 In order to ensure the Penrose Sphere and Interstellar Habitat ringworld segments look like the Machine Shipset when completed, it was necessary to override the final stage of the megastructures [b]gigablackhole_ring_world_3[/b] and [b]interstellar_habitat_5[/b]. Expect to see two entries in the error.log like this:
 [code]
-[23:55:48][game_singleobjectdatabase.h:165]: Object with key: gigablackhole_ring_world_3 already exists, using the one at  file: common/megastructures/~~_machine_shipset_gigastructures_overrides.txt line: 2
-[23:55:48][game_singleobjectdatabase.h:165]: Object with key: interstellar_habitat_5 already exists, using the one at  file: common/megastructures/~~_machine_shipset_gigastructures_overrides.txt line: 67
+[23:55:48][game_singleobjectdatabase.h:165]: Object with key: gigablackhole_ring_world_3 already exists, using the one at file: common/megastructures/~~_machine_shipset_gigastructures_overrides.txt line: 2
+[23:55:48][game_singleobjectdatabase.h:165]: Object with key: interstellar_habitat_5 already exists, using the one at file: common/megastructures/~~_machine_shipset_gigastructures_overrides.txt line: 67
 [/code]
 [h2]Changelog[/h2]
 See [url=https://steamcommunity.com/sharedfiles/filedetails/changelog/2644466861]Change Notes[/url]

@@ -1,6 +1,6 @@
 # Overview
 
-This is a compatibility patch between the Machine Shipset and Gigastructural Engineering & More (3.6) to allow regular ringworld sections to use the Machine Shipset graphics (including the Hive and Machine variants) for regular-sized ringworlds.  This mod also ensures that the Machine Shipset ringworld segments are used for many gigastructures such as the Matrioshka Brain and Orbital Arcology and that the O-class Dyson Sphere also uses a matching model.
+This is a compatibility patch between the Machine Shipset and Gigastructural Engineering & More (3.7) to allow regular ringworld sections to use the Machine Shipset graphics (including the Hive and Machine variants) for regular-sized ringworlds.  This mod also ensures that the Machine Shipset ringworld segments are used for many gigastructures such as the Matrioshka Brain and Orbital Arcology and that the O-class Dyson Sphere also uses a matching model.
 
 For larger flavors of ringworlds, you will need [Machine Shipset Add-on: Gigastructural Engineering Ringworlds - Titanic, Behemoth, and Gargantuan](https://steamcommunity.com/sharedfiles/filedetails/?id=2644469566) which is a separate, optional mod due to the graphical oddities created by the unaltered Machine Shipset ringworld graphics being reused in unintended ways.
 
@@ -8,20 +8,20 @@ Combined with my other mods [Ringworld Graphical Enhancements](https://steamcomm
 
 # Changes
 
-Adds graphical entities for the Machine Shipset that are compatible with the ringworld changes from Gigastructural Engineering & More (3.6).  Adds an event to assign the `machine_01` graphical culture to ringworld megastructures if the constructing empire has that graphical culture.
+Adds graphical entities for the Machine Shipset that are compatible with the ringworld changes from Gigastructural Engineering & More (3.7).  Adds an event to assign the `machine_01` graphical culture to ringworld megastructures if the constructing empire has that graphical culture.
 
 Also replaces two megastructures from base Gigas - `gigablackhole_ring_world_3` and `interstellar_habitat_5` - to support having the Penrose Sphere and Interstellar Habitat ringworlds match the `machine_01` graphical culture.  Note that existing fully constructed ringworld segments are not affected, only segments that finish upgrading after enabling this mod will have the new appearance.
 
 ## Compatibility
 
-Same compatibility as Gigastructural Engineering & More (3.6).
+Same compatibility as Gigastructural Engineering & More (3.7).
 
-Built for Stellaris version 3.6 "Orion."  Not compatible with achievements, but neither are the dependencies.
+Built for Stellaris version 3.7 "Canis Minor."  Not compatible with achievements, but neither are the dependencies.
 
 ### Required Dependency Mods
 
 * [Machine Shipset](https://steamcommunity.com/sharedfiles/filedetails/?id=2077186491) for the original graphics and other ship-related code
-* [Gigastructural Engineering & More (3.6)](https://steamcommunity.com/sharedfiles/filedetails/?id=1121692237) is the mod we're making compatible
+* [Gigastructural Engineering & More (3.7)](https://steamcommunity.com/sharedfiles/filedetails/?id=1121692237) is the mod we're making compatible
 
 ### Recommended Companion Mods
 
@@ -53,6 +53,7 @@ In order to ensure the Penrose Sphere and Interstellar Habitat ringworld segment
 * 1.5.0 Add support for many additional megastructures from Gigastructural Engineering & More
     * Add compatibility trigger for other mods to check whether this one is active
     * Remove unnecessary `giga_fixes.txt overrides`
+* 1.6.0 Mark as compatible with Stellaris version 3.7 "Canis Minor"
 
 ## Source Code
 

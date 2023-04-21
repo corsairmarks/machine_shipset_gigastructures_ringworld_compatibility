@@ -53,8 +53,8 @@ In order to ensure the Penrose Sphere and Interstellar Habitat ringworld segment
 * 1.5.0 Add support for many additional megastructures from Gigastructural Engineering & More
     * Add compatibility trigger for other mods to check whether this one is active
     * Remove unnecessary `giga_fixes.txt overrides`
-* 1.6.0 Mark as compatible with Stellaris version 3.7 "Canis Minor"
-    * Remove unnecessary Matrioska Brain entities - it has its own model as or Gigastructural Engineering 3.27 and no longer reuses ringworld segments
+* 2.0.0 Mark as compatible with Stellaris version 3.7 "Canis Minor"
+    * Remove unnecessary Matrioska Brain entities - the gigastructure now has its own model as of Gigastructural Engineering 3.27
 
 ## Source Code
 

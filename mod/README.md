@@ -1,6 +1,6 @@
 # Overview
 
-This is a compatibility patch between the Machine Shipset and Gigastructural Engineering & More (3.7) to allow regular ringworld sections to use the Machine Shipset graphics (including the Hive and Machine variants) for regular-sized ringworlds.  This mod also ensures that the Machine Shipset ringworld segments are used for many gigastructures such as the Matrioshka Brain and Orbital Arcology and that the O-class Dyson Sphere also uses a matching model.
+This is a compatibility patch between the Machine Shipset and Gigastructural Engineering & More (3.7) to allow regular ringworld sections to use the Machine Shipset graphics (including the Hive and Machine variants) for regular-sized ringworlds.  This mod also ensures that the Machine Shipset ringworld segments are used for many gigastructures such as the Orbital Arcology and that the O-class Dyson Sphere also uses a matching model.
 
 For larger flavors of ringworlds, you will need [Machine Shipset Add-on: Gigastructural Engineering Ringworlds - Titanic, Behemoth, and Gargantuan](https://steamcommunity.com/sharedfiles/filedetails/?id=2644469566) which is a separate, optional mod due to the graphical oddities created by the unaltered Machine Shipset ringworld graphics being reused in unintended ways.
 
